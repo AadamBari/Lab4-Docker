@@ -15,9 +15,9 @@ def projects():
     return "User paul"
 
 @app.route("/post/80")
-def projects():
+def post():
     return "Post 80"
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0',	port=8080,debug=True)
+    app.run(host='0.0.0.0', debug=True)
 

@@ -2,15 +2,15 @@ from flask import Flask
 app = Flask(__name__)
 
 
-  @app.route("/hello")
+@app.route("/hello")
 def hello():
     return "Hello World!"
 
-  @app.route("/user/paul")
+@app.route("/user/paul")
 def projects():
     return "User paul"
 
-  @app.route("/post/80")
+@app.route("/post/80")
 def projects():
     return "Post 80"
 

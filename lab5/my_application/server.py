@@ -2,17 +2,21 @@ from flask import Flask
 app = Flask(__name__)
 
 
-@app.route("/hello")
+@app.route('/')
+def index():
+    return 'Index Page'
+
+@app.route('/hello')
 def hello():
-    return "Hello World!"
+    return 'Hello World'
 
-@app.route("/user/paul")
+@app.route('/user/paul')
 def projects():
-    return "User paul"
+    return 'User paul'
 
-@app.route("/post/80")
+@app.route('/post/80')
 def projects():
-    return "Post 80"
+    return 'Post 80'
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0',	port=8080,debug=True)

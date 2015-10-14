@@ -12,7 +12,7 @@ def hello():
 
 @app.route("/user/paul")
 def projects():
-    return 'User paul'
+    return "User paul"
 
 @app.route("/post/80")
 def projects():
